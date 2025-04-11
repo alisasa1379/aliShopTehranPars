@@ -1,0 +1,76 @@
+.products{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    background-color: #2b2b2b;
+    .product{
+        width: 30%;
+        min-width: 300px;
+        background-color: gray;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        h3{
+            color: white;
+            text-transform: capitalize;
+            text-align: center;
+        }
+        img{
+            width: 40%;
+            border-radius: 5px;
+        }
+        .description{
+            width: 100%;
+            color: white;
+            text-transform: capitalize;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .category ,.price{
+            color: white;
+            text-transform: capitalize;
+        }
+        .rating{
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            text-transform: capitalize;
+        }
+        .price{
+            font-weight: bold;
+            font-size: 23px;
+        }
+        .buyBtn{
+            all: unset;
+            display: block;
+            width: fit-content;
+            color: white;
+            background-color: green;
+            cursor: pointer;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            transition: 500ms;
+            box-shadow: 5px 5px 25px green;
+            text-transform: capitalize;
+            &:hover{
+                transform: scale(85%);
+            }
+        }
+
+    }
+}
